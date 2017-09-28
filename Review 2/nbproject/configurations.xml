@@ -17,6 +17,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>classFx.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -51,6 +52,8 @@
       </item>
       <item path="Table.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="classFx.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
@@ -83,6 +86,8 @@
       <item path="RowAray.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Table.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="classFx.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
