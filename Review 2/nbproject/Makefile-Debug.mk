@@ -35,7 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/classFx.o \
+	${OBJECTDIR}/PlusTabl.o \
+	${OBJECTDIR}/RowA.o \
+	${OBJECTDIR}/Tabl.o \
 	${OBJECTDIR}/main.o
 
 
@@ -63,10 +65,20 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/review_2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/review_2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/classFx.o: classFx.cpp 
+${OBJECTDIR}/PlusTabl.o: PlusTabl.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/classFx.o classFx.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/PlusTabl.o PlusTabl.cpp
+
+${OBJECTDIR}/RowA.o: RowA.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/RowA.o RowA.cpp
+
+${OBJECTDIR}/Tabl.o: Tabl.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tabl.o Tabl.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
